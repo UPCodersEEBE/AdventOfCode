@@ -1,4 +1,4 @@
-archivo = open("input.txt","r")
+archivo = open("Dia01\Problema1\Zsolt1\input.txt","r")
 
 if archivo.mode == "r":
     numeros = archivo.readlines()
