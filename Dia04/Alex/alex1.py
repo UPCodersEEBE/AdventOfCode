@@ -1,4 +1,4 @@
-# Pro tip: he afegit 2 enters al final del input :) sino no em pillava un dels passaports
+# Pro tip: he afegit 1 enter al final del input :) sino no em pillava un dels passaports
 
 passports = []
 
