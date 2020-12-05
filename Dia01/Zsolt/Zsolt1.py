@@ -1,7 +1,6 @@
-archivo = open("Dia01\Problema1\Zsolt1\input.txt","r")
-
-if archivo.mode == "r":
-    numeros = archivo.readlines()
+with open("Dia01/Zsolt/input1.txt","r") as archivos:
+    if archivos.mode == "r":
+        numeros = archivos.readlines()
 
 for linea1 in numeros:
     for linea2 in numeros:
