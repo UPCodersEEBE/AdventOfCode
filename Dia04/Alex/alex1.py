@@ -1,4 +1,4 @@
-# Pro tip: he afegit 2 enters al final del input :) sino no pillava un dels passaports
+# Pro tip: he afegit 2 enters al final del input :) sino no em pillava un dels passaports
 
 passports = []
 
@@ -67,6 +67,3 @@ for passport in passports:
     valid = True
 
 print(t, reallyt)
-
-test = ""
-print(ButIsItReallyValid(passport))
