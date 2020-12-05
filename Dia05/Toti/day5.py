@@ -1,3 +1,11 @@
+# def getRowAndCol(bp):
+#     bin = bp
+#     bin = bin.replace("B" , "1")
+#     bin = bin.replace("F", "0")
+#     bin = bin.replace("L", "0")
+#     bin = bin.replace("R", "1")
+#     return(int(bin[:7], 2), int(bin[7:], 2))
+
 def getRow(bp):
     l = 0
     u = 127
@@ -50,3 +58,4 @@ for i in range(128):
 difSeats = [i for i in allSeats if i not in seatsInInput]
 
 print(difSeats)
+
