@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
 
 public class dia3 {
-  public static void main(String[] args) {
+  public static void getTrees(int deltax) {
     try {
       File myObj = new File("Dia03/Clara/input.txt");
       Scanner myReader = new Scanner(myObj);
@@ -18,7 +18,7 @@ public class dia3 {
           System.out.println("Tree!");
           count++;
         }
-        x+=3;
+        x+=deltax;
         if (x>30){
           x=x-31;
         }
@@ -32,5 +32,7 @@ public class dia3 {
       e.printStackTrace();
     }
   }
-  
+  public static void main(String[] args) {
+    getTrees(3);
+  }
 }
