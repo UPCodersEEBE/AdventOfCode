@@ -58,37 +58,24 @@ def draw2(drawn_numbers):
                         boards_clean[i][j][k] = 'X'
 
             for line in boards_clean[i]:
-            #print(line)
-            #print('----------------------')
-            #print('checking...')
                 if i not in won:
                     if check_if_won(boards_clean[i]):
-                        print(i,'won with',int(num))
                         last_num = int(num)
                         won.append(i)
-                        #c = 0
-                        #for line in range(5):
-                            #for col in range(5):
-                                #if boards_clean[i][line][col] != 'X':
-                                    #c += int(boards_clean[i][line][col])
-                        #return(c*int(num))
         if len(won) == len(boards_clean):
             break
     return(won,last_num)
 
-
-
 t = draw2(drawn_numbers)
-print('results')
-print(t[0][-1],t[1])
 last = t[0][-1]
 
-for line in boards_clean[last]:
-    print(line)
-print('----------------------')
 c = 0
 for line in range(5):
     for col in range(5):
         if boards_clean[last][line][col] != 'X':
             c += int(boards_clean[last][line][col])
-print(c*t[1])
+
+print('Resultat1 = ', draw(drawn_numbers))
+print('Resultat2 = ', c*t[1])
+
+
