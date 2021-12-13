@@ -5,7 +5,8 @@ with open("input.dat", "r") as f:
 def calculate_cost(pos: int) -> int:
     res = 0
     for crab in data:
-        res += abs(pos - crab)
+        dist = abs(pos - crab)
+        res += dist
     return res
 
 
