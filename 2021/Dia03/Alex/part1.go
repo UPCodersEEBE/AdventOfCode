@@ -15,6 +15,9 @@ func main() {
 	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
+	fmt.Println(scanner)
+	scanner.Scan()
+	fmt.Println(scanner)
 
 	var tot int
 	var ones []int
